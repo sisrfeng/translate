@@ -1,23 +1,5 @@
 # vim-translator
 
-![CI](https://github.com/voldikss/vim-translator/workflows/CI/badge.svg)
-
-Asynchronous translating plugin for Vim/Neovim
-
-![](https://user-images.githubusercontent.com/20282795/89249090-e3218880-d643-11ea-83a5-44915445690e.gif)
-
-- [Installation](#installation)
-- [Features](#features)
-- [Configuration](#configuration)
-- [Keymaps](#key-mappings)
-- [Commands](#commands)
-- [Highlight](#highlight)
-- [Statusline](#statusline)
-- [Know bugs](#know-bugs)
-- [FAQ](#faq)
-- [Breaking changes](#breaking-changes)
-- [References](#references)
-- [License](#license)
 
 ## Installation
 
@@ -102,17 +84,19 @@ Default: `['─', '│', '─', '│', '┌', '┐', '┘', '└']`
 ## Key Mappings
 
 This plugin doesn't supply any default mappings.
+ ```vim
 
-```vim
-""" Configuration example
 " Echo translation in the cmdline
 nmap <silent> <Leader>t <Plug>Translate
 vmap <silent> <Leader>t <Plug>TranslateV
+
 " Display translation in a window
 nmap <silent> <Leader>w <Plug>TranslateW
 vmap <silent> <Leader>w <Plug>TranslateWV
+
 " Replace the text with translation
 nmap <silent> <Leader>r <Plug>TranslateR
+
 vmap <silent> <Leader>r <Plug>TranslateRV
 " Translate the text in clipboard
 nmap <silent> <Leader>x <Plug>TranslateX
@@ -120,7 +104,11 @@ nmap <silent> <Leader>x <Plug>TranslateX
 
 Once the translation window is opened, type `<C-w>p` to jump into it and again to jump back
 
-Beside, there is a function which can be used to scroll window, only works in neovim.
+Beside,
+there is a function which
+can be used to
+scroll window,
+only works in neovim.
 
 ```vim
 nnoremap <silent><expr> <M-f> translator#window#float#has_scroll() ?

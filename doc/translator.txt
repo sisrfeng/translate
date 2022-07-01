@@ -2,7 +2,7 @@
 
 Author : voldikss <https://github.com/voldikss>
 License: MIT license
-NOTE: This is outdated, please refer to the README file:
+This is outdated, please refer to the README file:
     ../README.md
     or
     https://github.com/voldikss/vim-translator/blob/master/README.md
@@ -28,9 +28,10 @@ Asynchronous translating plugin for Vim/Neovim
 INSTALL                                      *translator-install*
 
 Using vim-plug:
- >
+
+
 	Plug 'voldikss/vim-translator'
-<
+
 
 ==============================================================================
 VARIABLES                                    *translator-variables*
@@ -87,7 +88,8 @@ g:translator_window_borderchars              *g:translator_window_borderchars*
 
 MAPPINGS                                     *translator-key-mappings*
 
-	This plugin doesn't supply any default mappings. >
+	This plugin doesn't supply any default mappings.
+
 
 	""" Configuration example
 
@@ -100,7 +102,7 @@ MAPPINGS                                     *translator-key-mappings*
 	" Replace the text with translation
 	nmap <silent> <Leader>r <Plug>TranslateR
 	vmap <silent> <Leader>r <Plug>TranslateRV
-<
+
 
 ==============================================================================
 COMMANDS                                     *translator-commands*
@@ -122,13 +124,14 @@ Arguments:
 
 	If `!` is provided, the plugin will perform a reverse translating by switching `target_lang` and `source_lang`
 
-	Examples(you can use `<Tab>` to get completion): >
+	Examples(you can use `<Tab>` to get completion):
+
 	:Translate                                  " translate the word under the cursor
 	:Translate --engines=google,youdao are you ok " translate text `are you ok` using google and youdao engines
 	:2Translate ...                             " translate line 2
 	:1,3Translate ...                           " translate line 1 to line 3
 	:'<,'>Translate ...                         " translate selected lines
-<
+
 
 :TranslateW                                  *:TranslateW*
 	Like |:Translate|, but display the translation in a window
@@ -149,7 +152,8 @@ HIGHLIGHT                                    *translator-highlight*
 
 Here are the default highlight links.
 To customize, use |highlight| command.
-    >
+
+
 	" Text highlight of translator window
 	hi def link TranslatorQuery             Identifier
 	hi def link TranslatorPhonetic          Type
@@ -170,4 +174,5 @@ REPOSITORY                                   *translator-repository-page*
 
 
 ==============================================================================
-vim:tw=78:nosta:noet:ts=4:sts=0:ft=help:noet:fen:fdm=marker:
+DIY_again
+DIY_2  vim:filetype=help:syntax=help:
